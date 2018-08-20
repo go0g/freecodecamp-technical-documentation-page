@@ -1,3 +1,128 @@
 /* global */
+body{
+    color: #424242;
+    font-size: 1.5rem;
+}
+nav{
+  height: 100%;
+  width: 20vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;  
+}
+main{
+    margin-left: 20vw;
+    margin-right: 4vw;
+
+}
 /* navigation */
+nav{
+    border-right: 2px solid gray;
+}
+nav header{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+nav ul{
+    list-style-type: none;    
+    padding: 0;
+}
+nav li{
+    padding: 0.5rem 0.2rem 0.5rem 2rem;
+    border-top: 1px solid black;
+    margin: 0;
+}
+nav a{
+    text-decoration: none
+}
+nav a:link{
+    color: black;
+}
+nav a:hover {
+    color: black;
+}
+nav a:active{
+    color: black;
+}
+nav a:visited{
+    color: black;
+}
+
+
 /* main */
+
+.main-section{
+    text-align:  justify;
+    padding-left: 2vw;
+    margin-bottom: 4rem;
+}
+main p{
+    line-height: 2rem;
+    padding-left: 2rem;
+}
+main ul{
+    margin-left: 2rem;
+}
+main li{
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+main li li{
+    margin-bottom: 0;
+}
+
+.codeStyle{    
+    margin-left: 2rem;
+    padding: 1rem;
+    background-color: rgba(5, 7, 44, 0.692);
+    color: bisque;
+}
+.firstTab{
+    padding: 2rem;
+    
+}
+
+@media all and (max-width: 1300px){
+    body{
+        font-size: 1rem;
+    }
+    main h1{
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 900px){
+    nav{ 
+        width: 80%; 
+        height: 20vh;
+        margin: 0 auto;      
+        position: static;
+        overflow: scroll;
+        border-right: 0;
+      }
+    main{
+        width: 80%;
+        margin: 0 auto;
+    }
+    main li{
+        margin-bottom: 0;
+    }
+    .main-section{
+        margin-bottom: 2em;
+        padding-left: 0;
+    }
+    
+    .main-section p {
+        padding-left: 0;
+        margin:0 0 0.75em 0;        
+        line-height: 1.5rem;
+    }
+    .main-section ul {
+        padding-left: 0;
+    }
+    .codeStyle{
+        margin-left: 0;
+    }
+}
